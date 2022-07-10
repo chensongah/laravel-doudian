@@ -1,8 +1,8 @@
 <?php
 
-namespace Abbotton\DouDian\Tests;
+namespace SmartJson\DouDian\Tests;
 
-use Abbotton\DouDian\DouDian;
+use SmartJson\DouDian\DouDian;
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
@@ -31,7 +31,7 @@ class DouDianTest extends TestCase
 
     private function getClass($class): string
     {
-        return 'Abbotton\\DouDian\\Api\\'.ucfirst($class);
+        return 'SmartJson\\DouDian\\Api\\'.ucfirst($class);
     }
 
     private function getConfig(): array

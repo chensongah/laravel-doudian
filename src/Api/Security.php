@@ -1,6 +1,6 @@
 <?php
 
-namespace Abbotton\DouDian\Api;
+namespace SmartJson\DouDian\Api;
 
 use Illuminate\Http\Client\RequestException;
 use Psr\SimpleCache\InvalidArgumentException;

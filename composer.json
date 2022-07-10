@@ -1,8 +1,8 @@
 {
-    "name": "abbotton/laravel-doudian",
+    "name": "smartjson/laravel-doudian",
     "description": "抖音小店开放平台SDK",
     "keywords": [
-        "abbotton",
+        "smartjson",
         "doudian",
         "抖音小店",
         "抖店开放平台",
@@ -10,13 +10,13 @@
         "抖店",
         "jinritemai"
     ],
-    "homepage": "https://github.com/abbotton/laravel-doudian",
+    "homepage": "https://github.com/chensongah/laravel-doudian",
     "license": "MIT",
     "type": "library",
     "authors": [
         {
-            "name": "Abbotton",
-            "email": "uctoo@foxmail.com",
+            "name": "Smartjson",
+            "email": "chensongah@hotmail.com",
             "role": "Developer"
         }
     ],
@@ -31,12 +31,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Abbotton\\DouDian\\": "src"
+            "SmartJson\\DouDian\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Abbotton\\DouDian\\Tests\\": "tests"
+            "SmartJson\\DouDian\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -48,10 +48,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Abbotton\\DouDian\\DouDianServiceProvider"
+                "SmartJson\\DouDian\\DouDianServiceProvider"
             ],
             "aliases": {
-                "DouDian": "Abbotton\\DouDian\\DouDianFacade"
+                "DouDian": "SmartJson\\DouDian\\DouDianFacade"
             }
         }
     }

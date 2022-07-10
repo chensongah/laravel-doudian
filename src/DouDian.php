@@ -1,36 +1,36 @@
 <?php
 
-namespace Abbotton\DouDian;
+namespace SmartJson\DouDian;
 
-use Abbotton\DouDian\Api\AfterSale;
-use Abbotton\DouDian\Api\Alliance;
-use Abbotton\DouDian\Api\AntiSpam;
-use Abbotton\DouDian\Api\Bats;
-use Abbotton\DouDian\Api\Brand;
-use Abbotton\DouDian\Api\BuyIn;
-use Abbotton\DouDian\Api\Coupons;
-use Abbotton\DouDian\Api\CrossBorder;
-use Abbotton\DouDian\Api\DutyFree;
-use Abbotton\DouDian\Api\FreightTemplate;
-use Abbotton\DouDian\Api\Iop;
-use Abbotton\DouDian\Api\Logistics;
-use Abbotton\DouDian\Api\Material;
-use Abbotton\DouDian\Api\Member;
-use Abbotton\DouDian\Api\OpenCloud;
-use Abbotton\DouDian\Api\Order;
-use Abbotton\DouDian\Api\OrderCode;
-use Abbotton\DouDian\Api\Product;
-use Abbotton\DouDian\Api\Recycle;
-use Abbotton\DouDian\Api\Security;
-use Abbotton\DouDian\Api\Shop;
-use Abbotton\DouDian\Api\Sms;
-use Abbotton\DouDian\Api\Spu;
-use Abbotton\DouDian\Api\Storage;
-use Abbotton\DouDian\Api\SupplyChain;
-use Abbotton\DouDian\Api\Token;
-use Abbotton\DouDian\Api\Topup;
-use Abbotton\DouDian\Api\WareHouse;
-use Abbotton\DouDian\Api\Yunc;
+use SmartJson\DouDian\Api\AfterSale;
+use SmartJson\DouDian\Api\Alliance;
+use SmartJson\DouDian\Api\AntiSpam;
+use SmartJson\DouDian\Api\Bats;
+use SmartJson\DouDian\Api\Brand;
+use SmartJson\DouDian\Api\BuyIn;
+use SmartJson\DouDian\Api\Coupons;
+use SmartJson\DouDian\Api\CrossBorder;
+use SmartJson\DouDian\Api\DutyFree;
+use SmartJson\DouDian\Api\FreightTemplate;
+use SmartJson\DouDian\Api\Iop;
+use SmartJson\DouDian\Api\Logistics;
+use SmartJson\DouDian\Api\Material;
+use SmartJson\DouDian\Api\Member;
+use SmartJson\DouDian\Api\OpenCloud;
+use SmartJson\DouDian\Api\Order;
+use SmartJson\DouDian\Api\OrderCode;
+use SmartJson\DouDian\Api\Product;
+use SmartJson\DouDian\Api\Recycle;
+use SmartJson\DouDian\Api\Security;
+use SmartJson\DouDian\Api\Shop;
+use SmartJson\DouDian\Api\Sms;
+use SmartJson\DouDian\Api\Spu;
+use SmartJson\DouDian\Api\Storage;
+use SmartJson\DouDian\Api\SupplyChain;
+use SmartJson\DouDian\Api\Token;
+use SmartJson\DouDian\Api\Topup;
+use SmartJson\DouDian\Api\WareHouse;
+use SmartJson\DouDian\Api\Yunc;
 use Exception;
 use Illuminate\Support\Str;
 
@@ -79,7 +79,7 @@ class DouDian
 
     public function __get($class)
     {
-        $class = '\\Abbotton\\DouDian\\Api\\'.Str::ucfirst($class);
+        $class = '\\SmartJson\\DouDian\\Api\\'.Str::ucfirst($class);
         if (! class_exists($class)) {
             throw new Exception($class.', Not found', 404);
         }

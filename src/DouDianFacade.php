@@ -1,6 +1,6 @@
 <?php
 
-namespace Abbotton\DouDian;
+namespace SmartJson\DouDian;
 
 use Illuminate\Support\Facades\Facade;
 
